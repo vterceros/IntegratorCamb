@@ -1,0 +1,12 @@
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\clsServicio\bin\Release\clsServicio.dll.config
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\clsServicio\bin\Release\clsServicio.dll
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\clsServicio\bin\Release\clsServicio.pdb
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\clsServicio\bin\Release\EntityFramework.dll
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\clsServicio\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\clsServicio\bin\Release\EntityFramework.xml
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\clsServicio\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\clsServicio\obj\Release\clsServicio.csproj.CoreCompileInputs.cache
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\clsServicio\obj\Release\clsServicio.csproj.CopyComplete
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\clsServicio\obj\Release\clsServicio.dll
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\clsServicio\obj\Release\clsServicio.pdb
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\clsServicio\obj\Release\clsServicio.csprojAssemblyReference.cache

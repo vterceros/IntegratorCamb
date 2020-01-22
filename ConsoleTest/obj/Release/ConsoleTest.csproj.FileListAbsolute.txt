@@ -1,0 +1,15 @@
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\ConsoleTest\bin\Release\ConsoleTest.exe.config
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\ConsoleTest\bin\Release\ConsoleTest.exe
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\ConsoleTest\bin\Release\ConsoleTest.pdb
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\ConsoleTest\bin\Release\clsServicio.dll
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\ConsoleTest\bin\Release\EntityFramework.dll
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\ConsoleTest\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\ConsoleTest\bin\Release\clsServicio.pdb
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\ConsoleTest\bin\Release\clsServicio.dll.config
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\ConsoleTest\bin\Release\EntityFramework.xml
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\ConsoleTest\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\ConsoleTest\obj\Release\ConsoleTest.csprojAssemblyReference.cache
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\ConsoleTest\obj\Release\ConsoleTest.csproj.CoreCompileInputs.cache
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\ConsoleTest\obj\Release\ConsoleTest.csproj.CopyComplete
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\ConsoleTest\obj\Release\ConsoleTest.exe
+C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\ConsoleTest\obj\Release\ConsoleTest.pdb
