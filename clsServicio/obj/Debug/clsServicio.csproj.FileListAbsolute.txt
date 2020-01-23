@@ -10,3 +10,15 @@ C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\clsServicio\obj\Debu
 C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\clsServicio\obj\Debug\clsServicio.dll
 C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\clsServicio\obj\Debug\clsServicio.pdb
 C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\clsServicio\obj\Debug\clsServicio.csprojAssemblyReference.cache
+C:\Users\Doom\Source\Repos\IntegratorCamb\clsServicio\bin\Debug\clsServicio.dll.config
+C:\Users\Doom\Source\Repos\IntegratorCamb\clsServicio\bin\Debug\clsServicio.dll
+C:\Users\Doom\Source\Repos\IntegratorCamb\clsServicio\bin\Debug\clsServicio.pdb
+C:\Users\Doom\Source\Repos\IntegratorCamb\clsServicio\bin\Debug\EntityFramework.dll
+C:\Users\Doom\Source\Repos\IntegratorCamb\clsServicio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Doom\Source\Repos\IntegratorCamb\clsServicio\bin\Debug\EntityFramework.xml
+C:\Users\Doom\Source\Repos\IntegratorCamb\clsServicio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Doom\Source\Repos\IntegratorCamb\clsServicio\obj\Debug\clsServicio.csprojAssemblyReference.cache
+C:\Users\Doom\Source\Repos\IntegratorCamb\clsServicio\obj\Debug\clsServicio.csproj.CoreCompileInputs.cache
+C:\Users\Doom\Source\Repos\IntegratorCamb\clsServicio\obj\Debug\clsServicio.csproj.CopyComplete
+C:\Users\Doom\Source\Repos\IntegratorCamb\clsServicio\obj\Debug\clsServicio.dll
+C:\Users\Doom\Source\Repos\IntegratorCamb\clsServicio\obj\Debug\clsServicio.pdb

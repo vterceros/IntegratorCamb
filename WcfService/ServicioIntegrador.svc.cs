@@ -13,11 +13,25 @@ namespace WcfService
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class ServiceIntegrador : IServiceIntegrador
     {
-        public string mtdObtenerConceptoPago(int codigoConvenio, string usuario, string usuariosContrasena, string contraseniaConexion)
+
+        public string mtdVerificarConectividad(string usuario, string usuariosContrasena, string contraseniaConexion)
+        {
+            try
+            {
+                string result = clsIntegrador.mtdVerificarConectividad(usuario, usuariosContrasena, contraseniaConexion);
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return ex.Message.ToString();
+            }
+        }
+
+        public string mtdObtenerConceptoPago(int codigoConvenio, string Gestion, string Usuario, string Sesion)
         {           
             try
             {
-                string result = clsIntegrador.mtdObtenerConceptoPago(codigoConvenio, usuario, usuariosContrasena, contraseniaConexion);
+                string result = clsIntegrador.mtdObtenerConceptoPago(codigoConvenio, Gestion, Usuario,Sesion);
                 return result;
             }
             catch(Exception ex) {
@@ -25,11 +39,11 @@ namespace WcfService
             }
         }
 
-        public string mtdObtenerListaNiveles(int codigoConvenio, string usuario, string usuarioConexion, string contraseniaConexion)
+        public string mtdObtenerListaNiveles(int codigoConvenio, string Gestion, string usuario, string Sesion)
         {
             try
             {
-                string result = clsIntegrador.mtdObtenerListasNiveles(codigoConvenio, usuario, usuarioConexion, contraseniaConexion);
+                string result = clsIntegrador.mtdObtenerListasNiveles(codigoConvenio, Gestion, usuario, Sesion);
                 return result;
             }
             catch (Exception ex)
@@ -39,11 +53,11 @@ namespace WcfService
         }
 
 
-        public string mtdObtenerListaSubNiveles(int codigoConvenio, string usuario, string usuarioConexion, string contraseniaConexion)
+        public string mtdObtenerListaSubNiveles(int codigoConvenio, string Gestion, string usuario, string Sesion)
         {
             try
             {
-                string result = clsIntegrador.mtdObtenerListaSubNiveles(codigoConvenio, usuario, usuarioConexion, contraseniaConexion);
+                string result = clsIntegrador.mtdObtenerListaSubNiveles(codigoConvenio, Gestion, usuario, Sesion);
                 return result;
             }
             catch (Exception ex)
@@ -53,11 +67,11 @@ namespace WcfService
         }
 
 
-        public string mtdObtenerListaClientes(int codigoConvenio, string TipoConsulta, string usuarioConexion, string contraseniaConexion)
+        public string mtdObtenerListaClientes(int codigoConvenio, string Gestion, string TipoConsulta, string usuario, string Sesion)
         {
             try
             {
-                string result = clsIntegrador.mtdObtenerListaClientes(codigoConvenio, TipoConsulta, usuarioConexion, contraseniaConexion);
+                string result = clsIntegrador.mtdObtenerListaClientes(codigoConvenio, Gestion, TipoConsulta, usuario, Sesion);
                 return result;
             }
             catch (Exception ex)
@@ -66,11 +80,11 @@ namespace WcfService
             }
         }
 
-        public string mtdObtenerServiciosRelacionados(int codigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, string usuarioConexion, string contraseniaConexion)
+        public string mtdObtenerServiciosRelacionados(int codigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string usuario, string Sesion)
         {
             try
             {
-                string result = clsIntegrador.mtdObtenerServiciosRelacionados(codigoConvenio, CodigoTipoBusqueda, CodigoCliente,  usuarioConexion, contraseniaConexion);
+                string result = clsIntegrador.mtdObtenerServiciosRelacionados(codigoConvenio, Gestion, CodigoTipoBusqueda, CodigoCliente,  usuario, Sesion);
                 return result;
             }
             catch (Exception ex)
@@ -78,11 +92,11 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string mtdObtenerDeuda(int codigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, string usuario, string usuarioConexion, string contraseniaConexion)
+        public string mtdObtenerDeuda(int codigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string usuario, string Sesion)
         {
             try
             {
-                string result = clsIntegrador.mtdObtenerDeuda(codigoConvenio, CodigoTipoBusqueda, CodigoCliente, usuario, usuarioConexion, contraseniaConexion);
+                string result = clsIntegrador.mtdObtenerDeuda(codigoConvenio, Gestion, CodigoTipoBusqueda, CodigoCliente, usuario, Sesion);
                 return result;
             }
             catch (Exception ex)
@@ -94,11 +108,11 @@ namespace WcfService
 
         public string mtdRegistrarPago(int codigoConvenio, DateTime FechaTransaccion, string CodigoTipoBusqueda,
                                               string CodigoCliente, string FacturaNITCI, string FacturaNombre, string NroTransaccion,
-                                              string usuario, string usuarioConexion, string contraseniaConexion)
+                                              string usuario, string sesion)
         {
             try
             {
-                string result = clsIntegrador.mtdRegistrarPago(codigoConvenio, FechaTransaccion, CodigoTipoBusqueda, CodigoCliente, FacturaNITCI, FacturaNombre, NroTransaccion, usuario, usuarioConexion, contraseniaConexion);
+                string result = clsIntegrador.mtdRegistrarPago(codigoConvenio, FechaTransaccion, CodigoTipoBusqueda, CodigoCliente, FacturaNITCI, FacturaNombre, NroTransaccion, usuario, sesion);
                 return result;
             }
             catch (Exception ex)
@@ -108,11 +122,11 @@ namespace WcfService
         }
 
 
-        public string mtdRevertirPago(int codigoConvenio, DateTime FechaTransaccion, string NroTransaccion,string usuario, string usuarioConexion, string contraseniaConexion)
+        public string mtdRevertirPago(int codigoConvenio, DateTime FechaTransaccion, string NroTransaccion,string usuario, string sesion)
         {
             try
             {
-                string result = clsIntegrador.mtdRevertirPago(codigoConvenio, FechaTransaccion, NroTransaccion, usuario, usuarioConexion, contraseniaConexion);
+                string result = clsIntegrador.mtdRevertirPago(codigoConvenio, FechaTransaccion, NroTransaccion, usuario, sesion);
                 return result;
             }
             catch (Exception ex)
@@ -122,11 +136,11 @@ namespace WcfService
         }
 
 
-        public string mtdExtornarFactura(int codigoConvenio, DateTime FechaTransaccion, string NroTransaccion, int NumeroFactura,string usuario, string usuarioConexion, string contraseniaConexion)
+        public string mtdExtornarFactura(int codigoConvenio, DateTime FechaTransaccion, string NroTransaccion, int NumeroFactura,string usuario, string sesion)
         {
             try
             {
-                string result = clsIntegrador.mtdExtornarFactura(codigoConvenio,FechaTransaccion,NroTransaccion,NumeroFactura,usuario,usuarioConexion,contraseniaConexion);
+                string result = clsIntegrador.mtdExtornarFactura(codigoConvenio,FechaTransaccion,NroTransaccion,NumeroFactura,usuario,sesion);
                 return result;
             }
             catch (Exception ex)
@@ -136,11 +150,11 @@ namespace WcfService
         }
 
 
-        public string mtdConsultarTransaccion(int codigoConvenio, DateTime FechaTransaccion, string NroTransaccion,string usuario, string usuarioConexion, string contraseniaConexion)
+        public string mtdConsultarTransaccion(int codigoConvenio, DateTime FechaTransaccion, string NroTransaccion,string usuario, string sesion)
         {
             try
             {
-                string result = clsIntegrador.mtdConsultarTransaccion(codigoConvenio, FechaTransaccion, NroTransaccion, usuario, usuarioConexion, contraseniaConexion);
+                string result = clsIntegrador.mtdConsultarTransaccion(codigoConvenio, FechaTransaccion, NroTransaccion, usuario,sesion);
                 return result;
             }
             catch (Exception ex)
@@ -150,11 +164,11 @@ namespace WcfService
         }
 
 
-        public string mtdObtenerDetallePagos(int codigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, DateTime FechaInicio, DateTime FechaFin,string usuario, string usuarioConexion, string contraseniaConexion)
+        public string mtdObtenerDetallePagos(int codigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, DateTime FechaInicio, DateTime FechaFin,string usuario, string sesion)
         {
             try
             {
-                string result = clsIntegrador.mtdObtenerDetallePagos(codigoConvenio, CodigoTipoBusqueda, CodigoCliente, FechaInicio,FechaFin,usuario, usuarioConexion, contraseniaConexion);
+                string result = clsIntegrador.mtdObtenerDetallePagos(codigoConvenio, CodigoTipoBusqueda, CodigoCliente, FechaInicio,FechaFin,usuario, sesion);
                 return result;
             }
             catch (Exception ex)
@@ -163,25 +177,11 @@ namespace WcfService
             }
         }
 
-        public string mtdObtenerDatosDeFactura(int codigoConvenio, DateTime FechaTransaccion, string NroTransaccion, string usuario, string usuarioConexion, string contraseniaConexion)
+        public string mtdObtenerDatosDeFactura(int codigoConvenio, DateTime FechaTransaccion, string NroTransaccion, string usuario, string sesion)
         {
             try
             {
-                string result = clsIntegrador.mtdObtenerDatosDeFactura(codigoConvenio, FechaTransaccion, NroTransaccion, usuario, usuarioConexion, contraseniaConexion);
-                return result;
-            }
-            catch (Exception ex)
-            {
-                return ex.Message.ToString();
-            }
-        }
-
-
-        public string mtdObtenerPlandePagos(int codigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, string usuario, string usuarioConexion, string contraseniaConexion)
-        {
-            try
-            {
-                string result = clsIntegrador.mtdObtenerPlandePagos(codigoConvenio, CodigoTipoBusqueda, CodigoCliente, usuario, usuarioConexion, contraseniaConexion);
+                string result = clsIntegrador.mtdObtenerDatosDeFactura(codigoConvenio, FechaTransaccion, NroTransaccion, usuario, sesion);
                 return result;
             }
             catch (Exception ex)
@@ -191,11 +191,25 @@ namespace WcfService
         }
 
 
-        public string mtdConciliarPagos(int codigoConvenio, DateTime FechaInicio, DateTime FechaFin, string UsuarioPago, string usuarioConsulta, string usuarioConexion, string contraseniaConexion)
+        public string mtdObtenerPlandePagos(int codigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string usuario, string sesion)
         {
             try
             {
-                string result = clsIntegrador.mtdConciliarPagos(codigoConvenio, FechaInicio, FechaFin, UsuarioPago, usuarioConsulta, usuarioConexion, contraseniaConexion);
+                string result = clsIntegrador.mtdObtenerPlandePagos(codigoConvenio, Gestion, CodigoTipoBusqueda, CodigoCliente, usuario, sesion);
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return ex.Message.ToString();
+            }
+        }
+
+
+        public string mtdConciliarPagos(int codigoConvenio, DateTime FechaInicio, DateTime FechaFin, string UsuarioPago, string usuario, string sesion)
+        {
+            try
+            {
+                string result = clsIntegrador.mtdConciliarPagos(codigoConvenio, FechaInicio, FechaFin, UsuarioPago, usuario,sesion);
                 return result;
             }
             catch (Exception ex)

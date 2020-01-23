@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="mtdVerificarConectividad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Usuarios" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="usuariosContrasena" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="contraseniaConexion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mtdVerificarConectividadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mtdVerificarConectividadResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="mtdObtenerConceptoPago">
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
-        <xs:element minOccurs="0" name="Usuarios" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuariosContrasena" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="contraseniaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -21,9 +37,9 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuarioConexion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="contraseniaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -38,9 +54,9 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuarioConexion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="contraseniaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -55,9 +71,10 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="TipoConsulta" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuarioConexion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="contraseniaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -72,10 +89,11 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoTipoBusqueda" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuarioConexion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="contraseniaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -90,11 +108,11 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoTipoBusqueda" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuarioConexion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="contraseniaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -116,8 +134,7 @@
         <xs:element minOccurs="0" name="FacturaNombre" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="NroTransaccion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuarioConexion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="contraseniaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -135,8 +152,7 @@
         <xs:element minOccurs="0" name="FechaTransaccion" type="xs:dateTime" />
         <xs:element minOccurs="0" name="NroTransaccion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuarioConexion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="contraseniaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -155,8 +171,7 @@
         <xs:element minOccurs="0" name="NroTransaccion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="NumeroFactura" type="xs:int" />
         <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuarioConexion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="contraseniaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -174,8 +189,7 @@
         <xs:element minOccurs="0" name="FechaTransaccion" type="xs:dateTime" />
         <xs:element minOccurs="0" name="NroTransaccion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuarioConexion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="contraseniaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -195,8 +209,7 @@
         <xs:element minOccurs="0" name="FechaInicio" type="xs:dateTime" />
         <xs:element minOccurs="0" name="FechaFin" type="xs:dateTime" />
         <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuarioConexion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="contraseniaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -214,8 +227,7 @@
         <xs:element minOccurs="0" name="FechaTransaccion" type="xs:dateTime" />
         <xs:element minOccurs="0" name="NroTransaccion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuarioConexion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="contraseniaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -230,11 +242,11 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoTipoBusqueda" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuarioConexion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="contraseniaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -252,9 +264,8 @@
         <xs:element minOccurs="0" name="FechaInicio" type="xs:dateTime" />
         <xs:element minOccurs="0" name="FechaFin" type="xs:dateTime" />
         <xs:element minOccurs="0" name="UsuarioPago" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuarioConsulta" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuarioConexion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="contraseniaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
