@@ -25,10 +25,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/22/2020 15:23:59</publishTime>
     </File>
     <File Include="bin/WcfService.dll">
-      <publishTime>01/22/2020 22:11:08</publishTime>
+      <publishTime>01/28/2020 21:24:27</publishTime>
     </File>
     <File Include="bin/WcfService.pdb">
-      <publishTime>01/22/2020 22:11:08</publishTime>
+      <publishTime>01/28/2020 21:24:27</publishTime>
     </File>
     <File Include="Service1.svc">
       <publishTime>08/09/2019 19:53:40</publishTime>
