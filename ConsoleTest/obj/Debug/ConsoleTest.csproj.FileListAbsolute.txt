@@ -28,3 +28,17 @@ C:\Users\Doom\Source\Repos\IntegratorCamb\ConsoleTest\obj\Debug\ConsoleTest.cspr
 C:\Users\Doom\Source\Repos\IntegratorCamb\ConsoleTest\obj\Debug\ConsoleTest.csproj.CopyComplete
 C:\Users\Doom\Source\Repos\IntegratorCamb\ConsoleTest\obj\Debug\ConsoleTest.exe
 C:\Users\Doom\Source\Repos\IntegratorCamb\ConsoleTest\obj\Debug\ConsoleTest.pdb
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Debug\ConsoleTest.exe.config
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Debug\ConsoleTest.exe
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Debug\ConsoleTest.pdb
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Debug\clsServicio.dll
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Debug\EntityFramework.dll
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Debug\clsServicio.pdb
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Debug\clsServicio.dll.config
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Debug\EntityFramework.xml
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\obj\Debug\ConsoleTest.csprojAssemblyReference.cache
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\obj\Debug\ConsoleTest.csproj.CopyComplete
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\obj\Debug\ConsoleTest.exe
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\obj\Debug\ConsoleTest.pdb
