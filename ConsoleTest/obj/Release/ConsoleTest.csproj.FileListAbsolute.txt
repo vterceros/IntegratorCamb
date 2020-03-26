@@ -13,3 +13,17 @@ C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\ConsoleTest\obj\Rele
 C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\ConsoleTest\obj\Release\ConsoleTest.csproj.CopyComplete
 C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\ConsoleTest\obj\Release\ConsoleTest.exe
 C:\Users\Doom\Desktop\tfsProyectos\WCFService\slnWCFService\ConsoleTest\obj\Release\ConsoleTest.pdb
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Release\ConsoleTest.exe.config
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Release\ConsoleTest.exe
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Release\ConsoleTest.pdb
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Release\clsServicio.dll
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Release\EntityFramework.dll
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Release\clsServicio.pdb
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Release\clsServicio.dll.config
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Release\EntityFramework.xml
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\obj\Release\ConsoleTest.csprojAssemblyReference.cache
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\obj\Release\ConsoleTest.csproj.CopyComplete
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\obj\Release\ConsoleTest.exe
+C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\obj\Release\ConsoleTest.pdb
