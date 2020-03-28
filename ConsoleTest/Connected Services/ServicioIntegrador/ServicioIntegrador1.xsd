@@ -1,278 +1,280 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="mtdVerificarConectividad">
+  <xs:element name="VerificarConectividad">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="Usuarios" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuariosContrasena" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="contraseniaConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UsuarioConexion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ContraseniaConexion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdVerificarConectividadResponse">
+  <xs:element name="VerificarConectividadResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="mtdVerificarConectividadResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VerificarConectividadResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdObtenerConceptoPago">
+  <xs:element name="ObtenerConceptoPago">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
         <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdObtenerConceptoPagoResponse">
+  <xs:element name="ObtenerConceptoPagoResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="mtdObtenerConceptoPagoResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ObtenerConceptoPagoResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdObtenerListaNiveles">
+  <xs:element name="ObtenerListaNiveles">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
         <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdObtenerListaNivelesResponse">
+  <xs:element name="ObtenerListaNivelesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="mtdObtenerListaNivelesResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ObtenerListaNivelesResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdObtenerListaSubNiveles">
+  <xs:element name="ObtenerListaSubNiveles">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
         <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdObtenerListaSubNivelesResponse">
+  <xs:element name="ObtenerListaSubNivelesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="mtdObtenerListaSubNivelesResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ObtenerListaSubNivelesResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdObtenerListaClientes">
+  <xs:element name="ObtenerListaClientes">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
         <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="TipoConsulta" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdObtenerListaClientesResponse">
+  <xs:element name="ObtenerListaClientesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="mtdObtenerListaClientesResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ObtenerListaClientesResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdObtenerServiciosRelacionados">
+  <xs:element name="ObtenerServiciosRelacionados">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
         <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoTipoBusqueda" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdObtenerServiciosRelacionadosResponse">
+  <xs:element name="ObtenerServiciosRelacionadosResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="mtdObtenerServiciosRelacionadosResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ObtenerServiciosRelacionadosResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdObtenerDeuda">
+  <xs:element name="ObtenerDeuda">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
         <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoTipoBusqueda" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdObtenerDeudaResponse">
+  <xs:element name="ObtenerDeudaResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="mtdObtenerDeudaResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ObtenerDeudaResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdRegistrarPago">
+  <xs:element name="RegistrarPago">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
         <xs:element minOccurs="0" name="FechaTransaccion" type="xs:dateTime" />
         <xs:element minOccurs="0" name="CodigoTipoBusqueda" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="FacturaNITCI" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="FacturaNombre" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="NroTransaccion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="sesion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DetallePago" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DatosFactura" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdRegistrarPagoResponse">
+  <xs:element name="RegistrarPagoResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="mtdRegistrarPagoResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RegistrarPagoResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdRevertirPago">
+  <xs:element name="RevertirPago">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
         <xs:element minOccurs="0" name="FechaTransaccion" type="xs:dateTime" />
         <xs:element minOccurs="0" name="NroTransaccion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="sesion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdRevertirPagoResponse">
+  <xs:element name="RevertirPagoResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="mtdRevertirPagoResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RevertirPagoResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdExtornarFactura">
+  <xs:element name="ExtornarFactura">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
         <xs:element minOccurs="0" name="FechaTransaccion" type="xs:dateTime" />
         <xs:element minOccurs="0" name="NroTransaccion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="NumeroFactura" type="xs:int" />
-        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="sesion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdExtornarFacturaResponse">
+  <xs:element name="ExtornarFacturaResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="mtdExtornarFacturaResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ExtornarFacturaResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdConsultarTransaccion">
+  <xs:element name="ConsultarTransaccion">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
         <xs:element minOccurs="0" name="FechaTransaccion" type="xs:dateTime" />
         <xs:element minOccurs="0" name="NroTransaccion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="sesion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdConsultarTransaccionResponse">
+  <xs:element name="ConsultarTransaccionResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="mtdConsultarTransaccionResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsultarTransaccionResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdObtenerDetallePagos">
+  <xs:element name="ObtenerDetallePagos">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
         <xs:element minOccurs="0" name="CodigoTipoBusqueda" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="FechaInicio" type="xs:dateTime" />
         <xs:element minOccurs="0" name="FechaFin" type="xs:dateTime" />
-        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="sesion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdObtenerDetallePagosResponse">
+  <xs:element name="ObtenerDetallePagosResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="mtdObtenerDetallePagosResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ObtenerDetallePagosResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdObtenerDatosDeFactura">
+  <xs:element name="ObtenerDatosDeFactura">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
         <xs:element minOccurs="0" name="FechaTransaccion" type="xs:dateTime" />
         <xs:element minOccurs="0" name="NroTransaccion" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="sesion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdObtenerDatosDeFacturaResponse">
+  <xs:element name="ObtenerDatosDeFacturaResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="mtdObtenerDatosDeFacturaResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ObtenerDatosDeFacturaResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdObtenerPlandePagos">
+  <xs:element name="ObtenerPlandePagos">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
         <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoTipoBusqueda" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="sesion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdObtenerPlandePagosResponse">
+  <xs:element name="ObtenerPlandePagosResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="mtdObtenerPlandePagosResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ObtenerPlandePagosResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdConciliarPagos">
+  <xs:element name="ConciliarPagos">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="codigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
         <xs:element minOccurs="0" name="FechaInicio" type="xs:dateTime" />
         <xs:element minOccurs="0" name="FechaFin" type="xs:dateTime" />
         <xs:element minOccurs="0" name="UsuarioPago" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="sesion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="mtdConciliarPagosResponse">
+  <xs:element name="ConciliarPagosResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="mtdConciliarPagosResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConciliarPagosResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

@@ -38,7 +38,6 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-
         public string ObtenerListaNiveles(int CodigoConvenio, string Gestion, string Usuario, string Sesion)
         {
             try
@@ -51,8 +50,6 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-
-
         public string ObtenerListaSubNiveles(int CodigoConvenio, string Gestion, string Usuario, string Sesion)
         {
             try
@@ -65,8 +62,6 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-
-
         public string ObtenerListaClientes(int CodigoConvenio, string Gestion, string TipoConsulta, string Usuario, string Sesion)
         {
             try
@@ -79,7 +74,6 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-
         public string ObtenerServiciosRelacionados(int CodigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string Usuario, string Sesion)
         {
             try
@@ -104,13 +98,11 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-
-
         public string RegistrarPago(int CodigoConvenio, DateTime FechaTransaccion, string CodigoTipoBusqueda, string CodigoCliente, string FacturaNITCI, string FacturaNombre, string NroTransaccion, string Usuario, string Sesion, string DetallePago, string DatosFactura)
         {
             try
             {
-                string result = clsIntegrador.mtdRegistrarPago(CodigoConvenio, FechaTransaccion, CodigoTipoBusqueda, CodigoCliente, FacturaNITCI, FacturaNombre, NroTransaccion, Usuario, Sesion);
+                string result = clsIntegrador.mtdRegistrarPago(CodigoConvenio, FechaTransaccion, CodigoTipoBusqueda, CodigoCliente, FacturaNITCI, FacturaNombre, NroTransaccion, Usuario, Sesion, DetallePago, DatosFactura);
                 return result;
             }
             catch (Exception ex)
@@ -118,8 +110,6 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-
-
         public string RevertirPago(int CodigoConvenio, DateTime FechaTransaccion, string NroTransaccion,string Usuario, string Sesion)
         {
             try
@@ -132,8 +122,6 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-
-
         public string ExtornarFactura(int CodigoConvenio, DateTime FechaTransaccion, string NroTransaccion, int NumeroFactura,string Usuario, string Sesion)
         {
             try
@@ -146,8 +134,6 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-
-
         public string ConsultarTransaccion(int CodigoConvenio, DateTime FechaTransaccion, string NroTransaccion,string Usuario, string Sesion)
         {
             try
@@ -160,8 +146,6 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-
-
         public string ObtenerDetallePagos(int CodigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, DateTime FechaInicio, DateTime FechaFin,string Usuario, string Sesion)
         {
             try
@@ -174,7 +158,6 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-
         public string ObtenerDatosDeFactura(int CodigoConvenio, DateTime FechaTransaccion, string NroTransaccion, string Usuario, string Sesion)
         {
             try
@@ -187,8 +170,6 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-
-
         public string ObtenerPlandePagos(int CodigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string Usuario, string Sesion)
         {
             try
@@ -201,8 +182,6 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-
-
         public string ConciliarPagos(int CodigoConvenio, DateTime FechaInicio, DateTime FechaFin, string UsuarioPago, string Usuario, string Sesion)
         {
             try

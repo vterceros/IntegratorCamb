@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\VICTOR\Desktop\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/clsServicio.dll">
+      <publishTime>03/28/2020 17:51:05</publishTime>
+    </File>
+    <File Include="bin/clsServicio.dll.config">
+      <publishTime>03/02/2020 08:46:41</publishTime>
+    </File>
+    <File Include="bin/clsServicio.pdb">
+      <publishTime>03/28/2020 17:51:05</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/02/2020 08:46:43</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/02/2020 08:46:43</publishTime>
+    </File>
+    <File Include="bin/WcfService.dll">
+      <publishTime>03/28/2020 17:51:07</publishTime>
+    </File>
+    <File Include="bin/WcfService.pdb">
+      <publishTime>03/28/2020 17:51:07</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>03/28/2020 17:51:08</publishTime>
+    </File>
+    <File Include="ServicioIntegrador.svc">
+      <publishTime>03/02/2020 08:46:40</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/28/2020 17:51:07</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

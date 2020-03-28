@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="fs5tpxRrgBqBxX4JVmm0F8a6FKo=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="j1Cmz709RQp2EKSEIuLPcujOFtM=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IServiceIntegrador">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttpBinding_IServiceIntegrador" contract="ServiceIntegrador.IServiceIntegrador" bindingType="basicHttpBinding" address="http://localhost/ServicioIntegrador/ServicioIntegrador.svc" bindingConfiguration="BasicHttpBinding_IServiceIntegrador">
+    <endpoint name="BasicHttpBinding_IServiceIntegrador" contract="ServicioIntegrador.IServiceIntegrador" bindingType="basicHttpBinding" address="http://localhost:62000/ServicioIntegrador.svc" bindingConfiguration="BasicHttpBinding_IServiceIntegrador">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost/ServicioIntegrador/ServicioIntegrador.svc</serializedValue>
+          <serializedValue>http://localhost:62000/ServicioIntegrador.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -127,7 +127,7 @@
           <serializedValue>BasicHttpBinding_IServiceIntegrador</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>ServiceIntegrador.IServiceIntegrador</serializedValue>
+          <serializedValue>ServicioIntegrador.IServiceIntegrador</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>

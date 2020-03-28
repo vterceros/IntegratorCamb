@@ -69,7 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\ServiceIntegrador\Reference.cs">
+    <Compile Include="Connected Services\ServicioIntegrador\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -81,11 +81,11 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceIntegrador\Service1.wsdl" />
-    <None Include="Connected Services\ServiceIntegrador\ServicioIntegrador.xsd">
+    <None Include="Connected Services\ServicioIntegrador\ServiceIntegrador.wsdl" />
+    <None Include="Connected Services\ServicioIntegrador\ServicioIntegrador.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceIntegrador\ServicioIntegrador1.xsd">
+    <None Include="Connected Services\ServicioIntegrador\ServicioIntegrador1.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config">
@@ -102,24 +102,6 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\ServiceIntegrador\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\ServiceIntegrador\ServicioIntegrador.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\ServiceIntegrador\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\ServiceIntegrador\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\ServiceIntegrador\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
@@ -130,6 +112,24 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServicioIntegrador\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServicioIntegrador\ServicioIntegrador.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServicioIntegrador\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServicioIntegrador\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServicioIntegrador\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

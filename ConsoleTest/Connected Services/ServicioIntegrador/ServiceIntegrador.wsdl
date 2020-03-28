@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceIntegrador" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:62000/ServicioIntegrador.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:62000/ServicioIntegrador.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceIntegrador_VerificarConectividad_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarConectividad" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_VerificarConectividad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarConectividadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ObtenerConceptoPago_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerConceptoPago" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ObtenerConceptoPago_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerConceptoPagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ObtenerListaNiveles_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerListaNiveles" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ObtenerListaNiveles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerListaNivelesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ObtenerListaSubNiveles_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerListaSubNiveles" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ObtenerListaSubNiveles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerListaSubNivelesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ObtenerListaClientes_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerListaClientes" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ObtenerListaClientes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerListaClientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ObtenerServiciosRelacionados_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerServiciosRelacionados" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ObtenerServiciosRelacionados_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerServiciosRelacionadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ObtenerDeuda_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDeuda" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ObtenerDeuda_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDeudaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_RegistrarPago_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarPago" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_RegistrarPago_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarPagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_RevertirPago_InputMessage">
+    <wsdl:part name="parameters" element="tns:RevertirPago" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_RevertirPago_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RevertirPagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ExtornarFactura_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExtornarFactura" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ExtornarFactura_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExtornarFacturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ConsultarTransaccion_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarTransaccion" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ConsultarTransaccion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarTransaccionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ObtenerDetallePagos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDetallePagos" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ObtenerDetallePagos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDetallePagosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ObtenerDatosDeFactura_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDatosDeFactura" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ObtenerDatosDeFactura_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDatosDeFacturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ObtenerPlandePagos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPlandePagos" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ObtenerPlandePagos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPlandePagosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ConciliarPagos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConciliarPagos" />
+  </wsdl:message>
+  <wsdl:message name="IServiceIntegrador_ConciliarPagos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConciliarPagosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceIntegrador">
+    <wsdl:operation name="VerificarConectividad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceIntegrador/VerificarConectividad" message="tns:IServiceIntegrador_VerificarConectividad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceIntegrador/VerificarConectividadResponse" message="tns:IServiceIntegrador_VerificarConectividad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerConceptoPago">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceIntegrador/ObtenerConceptoPago" message="tns:IServiceIntegrador_ObtenerConceptoPago_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceIntegrador/ObtenerConceptoPagoResponse" message="tns:IServiceIntegrador_ObtenerConceptoPago_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerListaNiveles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceIntegrador/ObtenerListaNiveles" message="tns:IServiceIntegrador_ObtenerListaNiveles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceIntegrador/ObtenerListaNivelesResponse" message="tns:IServiceIntegrador_ObtenerListaNiveles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerListaSubNiveles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceIntegrador/ObtenerListaSubNiveles" message="tns:IServiceIntegrador_ObtenerListaSubNiveles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceIntegrador/ObtenerListaSubNivelesResponse" message="tns:IServiceIntegrador_ObtenerListaSubNiveles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerListaClientes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceIntegrador/ObtenerListaClientes" message="tns:IServiceIntegrador_ObtenerListaClientes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceIntegrador/ObtenerListaClientesResponse" message="tns:IServiceIntegrador_ObtenerListaClientes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerServiciosRelacionados">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceIntegrador/ObtenerServiciosRelacionados" message="tns:IServiceIntegrador_ObtenerServiciosRelacionados_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceIntegrador/ObtenerServiciosRelacionadosResponse" message="tns:IServiceIntegrador_ObtenerServiciosRelacionados_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDeuda">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceIntegrador/ObtenerDeuda" message="tns:IServiceIntegrador_ObtenerDeuda_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceIntegrador/ObtenerDeudaResponse" message="tns:IServiceIntegrador_ObtenerDeuda_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarPago">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceIntegrador/RegistrarPago" message="tns:IServiceIntegrador_RegistrarPago_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceIntegrador/RegistrarPagoResponse" message="tns:IServiceIntegrador_RegistrarPago_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RevertirPago">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceIntegrador/RevertirPago" message="tns:IServiceIntegrador_RevertirPago_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceIntegrador/RevertirPagoResponse" message="tns:IServiceIntegrador_RevertirPago_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExtornarFactura">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceIntegrador/ExtornarFactura" message="tns:IServiceIntegrador_ExtornarFactura_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceIntegrador/ExtornarFacturaResponse" message="tns:IServiceIntegrador_ExtornarFactura_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTransaccion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceIntegrador/ConsultarTransaccion" message="tns:IServiceIntegrador_ConsultarTransaccion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceIntegrador/ConsultarTransaccionResponse" message="tns:IServiceIntegrador_ConsultarTransaccion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDetallePagos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceIntegrador/ObtenerDetallePagos" message="tns:IServiceIntegrador_ObtenerDetallePagos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceIntegrador/ObtenerDetallePagosResponse" message="tns:IServiceIntegrador_ObtenerDetallePagos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDatosDeFactura">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceIntegrador/ObtenerDatosDeFactura" message="tns:IServiceIntegrador_ObtenerDatosDeFactura_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceIntegrador/ObtenerDatosDeFacturaResponse" message="tns:IServiceIntegrador_ObtenerDatosDeFactura_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPlandePagos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceIntegrador/ObtenerPlandePagos" message="tns:IServiceIntegrador_ObtenerPlandePagos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceIntegrador/ObtenerPlandePagosResponse" message="tns:IServiceIntegrador_ObtenerPlandePagos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConciliarPagos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceIntegrador/ConciliarPagos" message="tns:IServiceIntegrador_ConciliarPagos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceIntegrador/ConciliarPagosResponse" message="tns:IServiceIntegrador_ConciliarPagos_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceIntegrador" type="tns:IServiceIntegrador">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VerificarConectividad">
+      <soap:operation soapAction="http://tempuri.org/IServiceIntegrador/VerificarConectividad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerConceptoPago">
+      <soap:operation soapAction="http://tempuri.org/IServiceIntegrador/ObtenerConceptoPago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerListaNiveles">
+      <soap:operation soapAction="http://tempuri.org/IServiceIntegrador/ObtenerListaNiveles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerListaSubNiveles">
+      <soap:operation soapAction="http://tempuri.org/IServiceIntegrador/ObtenerListaSubNiveles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerListaClientes">
+      <soap:operation soapAction="http://tempuri.org/IServiceIntegrador/ObtenerListaClientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerServiciosRelacionados">
+      <soap:operation soapAction="http://tempuri.org/IServiceIntegrador/ObtenerServiciosRelacionados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDeuda">
+      <soap:operation soapAction="http://tempuri.org/IServiceIntegrador/ObtenerDeuda" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarPago">
+      <soap:operation soapAction="http://tempuri.org/IServiceIntegrador/RegistrarPago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RevertirPago">
+      <soap:operation soapAction="http://tempuri.org/IServiceIntegrador/RevertirPago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExtornarFactura">
+      <soap:operation soapAction="http://tempuri.org/IServiceIntegrador/ExtornarFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTransaccion">
+      <soap:operation soapAction="http://tempuri.org/IServiceIntegrador/ConsultarTransaccion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDetallePagos">
+      <soap:operation soapAction="http://tempuri.org/IServiceIntegrador/ObtenerDetallePagos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDatosDeFactura">
+      <soap:operation soapAction="http://tempuri.org/IServiceIntegrador/ObtenerDatosDeFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPlandePagos">
+      <soap:operation soapAction="http://tempuri.org/IServiceIntegrador/ObtenerPlandePagos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConciliarPagos">
+      <soap:operation soapAction="http://tempuri.org/IServiceIntegrador/ConciliarPagos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceIntegrador">
+    <wsdl:port name="BasicHttpBinding_IServiceIntegrador" binding="tns:BasicHttpBinding_IServiceIntegrador">
+      <soap:address location="http://localhost:62000/ServicioIntegrador.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
