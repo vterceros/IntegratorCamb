@@ -28,7 +28,6 @@ C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\bin\Debug\EntityFramework.
 C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\bin\Debug\EntityFramework.xml
 C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\obj\Debug\clsServicio.csprojAssemblyReference.cache
 C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\obj\Debug\clsServicio.csproj.CopyComplete
 C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\obj\Debug\clsServicio.dll
 C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\obj\Debug\clsServicio.pdb

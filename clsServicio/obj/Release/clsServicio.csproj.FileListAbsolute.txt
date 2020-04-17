@@ -22,3 +22,13 @@ C:\Users\Doom\Source\Repos\IntegratorCamb\clsServicio\obj\Release\clsServicio.cs
 C:\Users\Doom\Source\Repos\IntegratorCamb\clsServicio\obj\Release\clsServicio.csproj.CopyComplete
 C:\Users\Doom\Source\Repos\IntegratorCamb\clsServicio\obj\Release\clsServicio.dll
 C:\Users\Doom\Source\Repos\IntegratorCamb\clsServicio\obj\Release\clsServicio.pdb
+C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\bin\Release\clsServicio.dll.config
+C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\bin\Release\clsServicio.dll
+C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\bin\Release\clsServicio.pdb
+C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\bin\Release\EntityFramework.dll
+C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\bin\Release\EntityFramework.xml
+C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\obj\Release\clsServicio.csproj.CopyComplete
+C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\obj\Release\clsServicio.dll
+C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\obj\Release\clsServicio.pdb

@@ -28,13 +28,14 @@ namespace WcfService
         }
 
         public string ObtenerConceptoPago(int CodigoConvenio, string Gestion, string Usuario, string Sesion)
-        {           
+        {
             try
             {
-                string result = clsIntegrador.mtdObtenerConceptoPago(CodigoConvenio, Gestion, Usuario,Sesion);
+                string result = clsIntegrador.mtdObtenerConceptoPago(CodigoConvenio, Gestion, Usuario, Sesion);
                 return result;
             }
-            catch(Exception ex) {
+            catch (Exception ex)
+            {
                 return ex.Message.ToString();
             }
         }
@@ -78,7 +79,7 @@ namespace WcfService
         {
             try
             {
-                string result = clsIntegrador.mtdObtenerServiciosRelacionados(CodigoConvenio, Gestion, CodigoTipoBusqueda, CodigoCliente,  Usuario, Sesion);
+                string result = clsIntegrador.mtdObtenerServiciosRelacionados(CodigoConvenio, Gestion, CodigoTipoBusqueda, CodigoCliente, Usuario, Sesion);
                 return result;
             }
             catch (Exception ex)
@@ -98,11 +99,12 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string RegistrarPago(int CodigoConvenio, DateTime FechaTransaccion, string CodigoTipoBusqueda, string CodigoCliente, string FacturaNITCI, string FacturaNombre, string NroTransaccion, string Usuario, string Sesion, string DetallePago, string DatosFactura)
+        public string RegistrarPago(int CodigoConvenio, string FechaTransaccion, string CodigoTipoBusqueda, string CodigoCliente, string FacturaNITCI, string FacturaNombre, string NroTransaccion, string Usuario, string Sesion, string DetallePago, string DatosFactura)
         {
             try
             {
-                string result = clsIntegrador.mtdRegistrarPago(CodigoConvenio, FechaTransaccion, CodigoTipoBusqueda, CodigoCliente, FacturaNITCI, FacturaNombre, NroTransaccion, Usuario, Sesion, DetallePago, DatosFactura);
+
+                string result = clsIntegrador.mtdRegistrarPago(CodigoConvenio, ParsearFecha(FechaTransaccion), CodigoTipoBusqueda, CodigoCliente, FacturaNITCI, FacturaNombre, NroTransaccion, Usuario, Sesion, DetallePago, DatosFactura);
                 return result;
             }
             catch (Exception ex)
@@ -110,11 +112,13 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string RevertirPago(int CodigoConvenio, DateTime FechaTransaccion, string NroTransaccion,string Usuario, string Sesion)
+
+
+        public string RevertirPago(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion)
         {
             try
             {
-                string result = clsIntegrador.mtdRevertirPago(CodigoConvenio, FechaTransaccion, NroTransaccion, Usuario, Sesion);
+                string result = clsIntegrador.mtdRevertirPago(CodigoConvenio, ParsearFecha(FechaTransaccion), NroTransaccion, Usuario, Sesion);
                 return result;
             }
             catch (Exception ex)
@@ -122,11 +126,11 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string ExtornarFactura(int CodigoConvenio, DateTime FechaTransaccion, string NroTransaccion, int NumeroFactura,string Usuario, string Sesion)
+        public string ExtornarFactura(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, int NumeroFactura, string Usuario, string Sesion)
         {
             try
             {
-                string result = clsIntegrador.mtdExtornarFactura(CodigoConvenio,FechaTransaccion,NroTransaccion,NumeroFactura,Usuario,Sesion);
+                string result = clsIntegrador.mtdExtornarFactura(CodigoConvenio, ParsearFecha(FechaTransaccion), NroTransaccion, NumeroFactura, Usuario, Sesion);
                 return result;
             }
             catch (Exception ex)
@@ -134,11 +138,11 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string ConsultarTransaccion(int CodigoConvenio, DateTime FechaTransaccion, string NroTransaccion,string Usuario, string Sesion)
+        public string ConsultarTransaccion(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion)
         {
             try
             {
-                string result = clsIntegrador.mtdConsultarTransaccion(CodigoConvenio, FechaTransaccion, NroTransaccion, Usuario,Sesion);
+                string result = clsIntegrador.mtdConsultarTransaccion(CodigoConvenio, ParsearFecha(FechaTransaccion), NroTransaccion, Usuario, Sesion);
                 return result;
             }
             catch (Exception ex)
@@ -146,11 +150,11 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string ObtenerDetallePagos(int CodigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, DateTime FechaInicio, DateTime FechaFin,string Usuario, string Sesion)
+        public string ObtenerDetallePagos(int CodigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, string FechaInicio, string FechaFin, string Usuario, string Sesion)
         {
             try
             {
-                string result = clsIntegrador.mtdObtenerDetallePagos(CodigoConvenio, CodigoTipoBusqueda, CodigoCliente, FechaInicio,FechaFin,Usuario, Sesion);
+                string result = clsIntegrador.mtdObtenerDetallePagos(CodigoConvenio, CodigoTipoBusqueda, CodigoCliente, ParsearFecha(FechaInicio), ParsearFecha(FechaFin), Usuario, Sesion);
                 return result;
             }
             catch (Exception ex)
@@ -158,11 +162,11 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string ObtenerDatosDeFactura(int CodigoConvenio, DateTime FechaTransaccion, string NroTransaccion, string Usuario, string Sesion)
+        public string ObtenerDatosDeFactura(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion)
         {
             try
             {
-                string result = clsIntegrador.mtdObtenerDatosDeFactura(CodigoConvenio, FechaTransaccion, NroTransaccion, Usuario, Sesion);
+                string result = clsIntegrador.mtdObtenerDatosDeFactura(CodigoConvenio, ParsearFecha(FechaTransaccion), NroTransaccion, Usuario, Sesion);
                 return result;
             }
             catch (Exception ex)
@@ -182,11 +186,11 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string ConciliarPagos(int CodigoConvenio, DateTime FechaInicio, DateTime FechaFin, string UsuarioPago, string Usuario, string Sesion)
+        public string ConciliarPagos(int CodigoConvenio, string FechaInicio, string FechaFin, string UsuarioPago, string Usuario, string Sesion)
         {
             try
             {
-                string result = clsIntegrador.mtdConciliarPagos(CodigoConvenio, FechaInicio, FechaFin, UsuarioPago, Usuario,Sesion);
+                string result = clsIntegrador.mtdConciliarPagos(CodigoConvenio, ParsearFecha(FechaInicio), ParsearFecha(FechaFin), UsuarioPago, Usuario, Sesion);
                 return result;
             }
             catch (Exception ex)
@@ -194,5 +198,28 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
+
+        private DateTime ParsearFecha(string fechaTransaccion)
+        {
+            try
+            {
+                //ddmmyyyy 
+                if (fechaTransaccion.Length != 8)
+                {
+                    return DateTime.Now;
+                }
+                int dia = int.Parse(fechaTransaccion.Substring(0,2));
+                int mes = int.Parse(fechaTransaccion.Substring(2, 2));
+                int anho = int.Parse(fechaTransaccion.Substring(4, 4));
+
+                DateTime fecha = new DateTime(anho, mes, dia);
+                return fecha;
+            }
+            catch (Exception)
+            {
+                return DateTime.Now;
+            }
+        }
+
     }
 }

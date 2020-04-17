@@ -28,3 +28,17 @@ C:\Users\Doom\Source\Repos\IntegratorCamb\WcfService\obj\Release\WcfService.cspr
 C:\Users\Doom\Source\Repos\IntegratorCamb\WcfService\obj\Release\WcfService.csproj.CopyComplete
 C:\Users\Doom\Source\Repos\IntegratorCamb\WcfService\obj\Release\WcfService.dll
 C:\Users\Doom\Source\Repos\IntegratorCamb\WcfService\obj\Release\WcfService.pdb
+C:\Users\VICTOR\Documents\VHPri\Cambridge\WcfService\bin\WcfService.dll.config
+C:\Users\VICTOR\Documents\VHPri\Cambridge\WcfService\bin\WcfService.dll
+C:\Users\VICTOR\Documents\VHPri\Cambridge\WcfService\bin\WcfService.pdb
+C:\Users\VICTOR\Documents\VHPri\Cambridge\WcfService\bin\clsServicio.dll
+C:\Users\VICTOR\Documents\VHPri\Cambridge\WcfService\bin\EntityFramework.dll
+C:\Users\VICTOR\Documents\VHPri\Cambridge\WcfService\bin\EntityFramework.SqlServer.dll
+C:\Users\VICTOR\Documents\VHPri\Cambridge\WcfService\bin\clsServicio.pdb
+C:\Users\VICTOR\Documents\VHPri\Cambridge\WcfService\bin\clsServicio.dll.config
+C:\Users\VICTOR\Documents\VHPri\Cambridge\WcfService\bin\EntityFramework.xml
+C:\Users\VICTOR\Documents\VHPri\Cambridge\WcfService\bin\EntityFramework.SqlServer.xml
+C:\Users\VICTOR\Documents\VHPri\Cambridge\WcfService\obj\Release\WcfService.csprojAssemblyReference.cache
+C:\Users\VICTOR\Documents\VHPri\Cambridge\WcfService\obj\Release\WcfService.csproj.CopyComplete
+C:\Users\VICTOR\Documents\VHPri\Cambridge\WcfService\obj\Release\WcfService.dll
+C:\Users\VICTOR\Documents\VHPri\Cambridge\WcfService\obj\Release\WcfService.pdb

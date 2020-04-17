@@ -58,40 +58,40 @@ namespace ConsoleTest.ServicioIntegrador {
         System.Threading.Tasks.Task<string> ObtenerDeudaAsync(int CodigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string Usuario, string Sesion);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceIntegrador/RegistrarPago", ReplyAction="http://tempuri.org/IServiceIntegrador/RegistrarPagoResponse")]
-        string RegistrarPago(int CodigoConvenio, System.DateTime FechaTransaccion, string CodigoTipoBusqueda, string CodigoCliente, string FacturaNITCI, string FacturaNombre, string NroTransaccion, string Usuario, string Sesion, string DetallePago, string DatosFactura);
+        string RegistrarPago(int CodigoConvenio, string FechaTransaccion, string CodigoTipoBusqueda, string CodigoCliente, string FacturaNITCI, string FacturaNombre, string NroTransaccion, string Usuario, string Sesion, string DetallePago, string DatosFactura);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceIntegrador/RegistrarPago", ReplyAction="http://tempuri.org/IServiceIntegrador/RegistrarPagoResponse")]
-        System.Threading.Tasks.Task<string> RegistrarPagoAsync(int CodigoConvenio, System.DateTime FechaTransaccion, string CodigoTipoBusqueda, string CodigoCliente, string FacturaNITCI, string FacturaNombre, string NroTransaccion, string Usuario, string Sesion, string DetallePago, string DatosFactura);
+        System.Threading.Tasks.Task<string> RegistrarPagoAsync(int CodigoConvenio, string FechaTransaccion, string CodigoTipoBusqueda, string CodigoCliente, string FacturaNITCI, string FacturaNombre, string NroTransaccion, string Usuario, string Sesion, string DetallePago, string DatosFactura);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceIntegrador/RevertirPago", ReplyAction="http://tempuri.org/IServiceIntegrador/RevertirPagoResponse")]
-        string RevertirPago(int CodigoConvenio, System.DateTime FechaTransaccion, string NroTransaccion, string Usuario, string Sesion);
+        string RevertirPago(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceIntegrador/RevertirPago", ReplyAction="http://tempuri.org/IServiceIntegrador/RevertirPagoResponse")]
-        System.Threading.Tasks.Task<string> RevertirPagoAsync(int CodigoConvenio, System.DateTime FechaTransaccion, string NroTransaccion, string Usuario, string Sesion);
+        System.Threading.Tasks.Task<string> RevertirPagoAsync(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceIntegrador/ExtornarFactura", ReplyAction="http://tempuri.org/IServiceIntegrador/ExtornarFacturaResponse")]
-        string ExtornarFactura(int CodigoConvenio, System.DateTime FechaTransaccion, string NroTransaccion, int NumeroFactura, string Usuario, string Sesion);
+        string ExtornarFactura(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, int NumeroFactura, string Usuario, string Sesion);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceIntegrador/ExtornarFactura", ReplyAction="http://tempuri.org/IServiceIntegrador/ExtornarFacturaResponse")]
-        System.Threading.Tasks.Task<string> ExtornarFacturaAsync(int CodigoConvenio, System.DateTime FechaTransaccion, string NroTransaccion, int NumeroFactura, string Usuario, string Sesion);
+        System.Threading.Tasks.Task<string> ExtornarFacturaAsync(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, int NumeroFactura, string Usuario, string Sesion);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceIntegrador/ConsultarTransaccion", ReplyAction="http://tempuri.org/IServiceIntegrador/ConsultarTransaccionResponse")]
-        string ConsultarTransaccion(int CodigoConvenio, System.DateTime FechaTransaccion, string NroTransaccion, string Usuario, string Sesion);
+        string ConsultarTransaccion(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceIntegrador/ConsultarTransaccion", ReplyAction="http://tempuri.org/IServiceIntegrador/ConsultarTransaccionResponse")]
-        System.Threading.Tasks.Task<string> ConsultarTransaccionAsync(int CodigoConvenio, System.DateTime FechaTransaccion, string NroTransaccion, string Usuario, string Sesion);
+        System.Threading.Tasks.Task<string> ConsultarTransaccionAsync(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceIntegrador/ObtenerDetallePagos", ReplyAction="http://tempuri.org/IServiceIntegrador/ObtenerDetallePagosResponse")]
-        string ObtenerDetallePagos(int CodigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, System.DateTime FechaInicio, System.DateTime FechaFin, string Usuario, string Sesion);
+        string ObtenerDetallePagos(int CodigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, string FechaInicio, string FechaFin, string Usuario, string Sesion);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceIntegrador/ObtenerDetallePagos", ReplyAction="http://tempuri.org/IServiceIntegrador/ObtenerDetallePagosResponse")]
-        System.Threading.Tasks.Task<string> ObtenerDetallePagosAsync(int CodigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, System.DateTime FechaInicio, System.DateTime FechaFin, string Usuario, string Sesion);
+        System.Threading.Tasks.Task<string> ObtenerDetallePagosAsync(int CodigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, string FechaInicio, string FechaFin, string Usuario, string Sesion);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceIntegrador/ObtenerDatosDeFactura", ReplyAction="http://tempuri.org/IServiceIntegrador/ObtenerDatosDeFacturaResponse")]
-        string ObtenerDatosDeFactura(int CodigoConvenio, System.DateTime FechaTransaccion, string NroTransaccion, string Usuario, string Sesion);
+        string ObtenerDatosDeFactura(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceIntegrador/ObtenerDatosDeFactura", ReplyAction="http://tempuri.org/IServiceIntegrador/ObtenerDatosDeFacturaResponse")]
-        System.Threading.Tasks.Task<string> ObtenerDatosDeFacturaAsync(int CodigoConvenio, System.DateTime FechaTransaccion, string NroTransaccion, string Usuario, string Sesion);
+        System.Threading.Tasks.Task<string> ObtenerDatosDeFacturaAsync(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceIntegrador/ObtenerPlandePagos", ReplyAction="http://tempuri.org/IServiceIntegrador/ObtenerPlandePagosResponse")]
         string ObtenerPlandePagos(int CodigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string Usuario, string Sesion);
@@ -100,10 +100,10 @@ namespace ConsoleTest.ServicioIntegrador {
         System.Threading.Tasks.Task<string> ObtenerPlandePagosAsync(int CodigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string Usuario, string Sesion);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceIntegrador/ConciliarPagos", ReplyAction="http://tempuri.org/IServiceIntegrador/ConciliarPagosResponse")]
-        string ConciliarPagos(int CodigoConvenio, System.DateTime FechaInicio, System.DateTime FechaFin, string UsuarioPago, string Usuario, string Sesion);
+        string ConciliarPagos(int CodigoConvenio, string FechaInicio, string FechaFin, string UsuarioPago, string Usuario, string Sesion);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceIntegrador/ConciliarPagos", ReplyAction="http://tempuri.org/IServiceIntegrador/ConciliarPagosResponse")]
-        System.Threading.Tasks.Task<string> ConciliarPagosAsync(int CodigoConvenio, System.DateTime FechaInicio, System.DateTime FechaFin, string UsuarioPago, string Usuario, string Sesion);
+        System.Threading.Tasks.Task<string> ConciliarPagosAsync(int CodigoConvenio, string FechaInicio, string FechaFin, string UsuarioPago, string Usuario, string Sesion);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -189,51 +189,51 @@ namespace ConsoleTest.ServicioIntegrador {
             return base.Channel.ObtenerDeudaAsync(CodigoConvenio, Gestion, CodigoTipoBusqueda, CodigoCliente, Usuario, Sesion);
         }
         
-        public string RegistrarPago(int CodigoConvenio, System.DateTime FechaTransaccion, string CodigoTipoBusqueda, string CodigoCliente, string FacturaNITCI, string FacturaNombre, string NroTransaccion, string Usuario, string Sesion, string DetallePago, string DatosFactura) {
+        public string RegistrarPago(int CodigoConvenio, string FechaTransaccion, string CodigoTipoBusqueda, string CodigoCliente, string FacturaNITCI, string FacturaNombre, string NroTransaccion, string Usuario, string Sesion, string DetallePago, string DatosFactura) {
             return base.Channel.RegistrarPago(CodigoConvenio, FechaTransaccion, CodigoTipoBusqueda, CodigoCliente, FacturaNITCI, FacturaNombre, NroTransaccion, Usuario, Sesion, DetallePago, DatosFactura);
         }
         
-        public System.Threading.Tasks.Task<string> RegistrarPagoAsync(int CodigoConvenio, System.DateTime FechaTransaccion, string CodigoTipoBusqueda, string CodigoCliente, string FacturaNITCI, string FacturaNombre, string NroTransaccion, string Usuario, string Sesion, string DetallePago, string DatosFactura) {
+        public System.Threading.Tasks.Task<string> RegistrarPagoAsync(int CodigoConvenio, string FechaTransaccion, string CodigoTipoBusqueda, string CodigoCliente, string FacturaNITCI, string FacturaNombre, string NroTransaccion, string Usuario, string Sesion, string DetallePago, string DatosFactura) {
             return base.Channel.RegistrarPagoAsync(CodigoConvenio, FechaTransaccion, CodigoTipoBusqueda, CodigoCliente, FacturaNITCI, FacturaNombre, NroTransaccion, Usuario, Sesion, DetallePago, DatosFactura);
         }
         
-        public string RevertirPago(int CodigoConvenio, System.DateTime FechaTransaccion, string NroTransaccion, string Usuario, string Sesion) {
+        public string RevertirPago(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion) {
             return base.Channel.RevertirPago(CodigoConvenio, FechaTransaccion, NroTransaccion, Usuario, Sesion);
         }
         
-        public System.Threading.Tasks.Task<string> RevertirPagoAsync(int CodigoConvenio, System.DateTime FechaTransaccion, string NroTransaccion, string Usuario, string Sesion) {
+        public System.Threading.Tasks.Task<string> RevertirPagoAsync(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion) {
             return base.Channel.RevertirPagoAsync(CodigoConvenio, FechaTransaccion, NroTransaccion, Usuario, Sesion);
         }
         
-        public string ExtornarFactura(int CodigoConvenio, System.DateTime FechaTransaccion, string NroTransaccion, int NumeroFactura, string Usuario, string Sesion) {
+        public string ExtornarFactura(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, int NumeroFactura, string Usuario, string Sesion) {
             return base.Channel.ExtornarFactura(CodigoConvenio, FechaTransaccion, NroTransaccion, NumeroFactura, Usuario, Sesion);
         }
         
-        public System.Threading.Tasks.Task<string> ExtornarFacturaAsync(int CodigoConvenio, System.DateTime FechaTransaccion, string NroTransaccion, int NumeroFactura, string Usuario, string Sesion) {
+        public System.Threading.Tasks.Task<string> ExtornarFacturaAsync(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, int NumeroFactura, string Usuario, string Sesion) {
             return base.Channel.ExtornarFacturaAsync(CodigoConvenio, FechaTransaccion, NroTransaccion, NumeroFactura, Usuario, Sesion);
         }
         
-        public string ConsultarTransaccion(int CodigoConvenio, System.DateTime FechaTransaccion, string NroTransaccion, string Usuario, string Sesion) {
+        public string ConsultarTransaccion(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion) {
             return base.Channel.ConsultarTransaccion(CodigoConvenio, FechaTransaccion, NroTransaccion, Usuario, Sesion);
         }
         
-        public System.Threading.Tasks.Task<string> ConsultarTransaccionAsync(int CodigoConvenio, System.DateTime FechaTransaccion, string NroTransaccion, string Usuario, string Sesion) {
+        public System.Threading.Tasks.Task<string> ConsultarTransaccionAsync(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion) {
             return base.Channel.ConsultarTransaccionAsync(CodigoConvenio, FechaTransaccion, NroTransaccion, Usuario, Sesion);
         }
         
-        public string ObtenerDetallePagos(int CodigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, System.DateTime FechaInicio, System.DateTime FechaFin, string Usuario, string Sesion) {
+        public string ObtenerDetallePagos(int CodigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, string FechaInicio, string FechaFin, string Usuario, string Sesion) {
             return base.Channel.ObtenerDetallePagos(CodigoConvenio, CodigoTipoBusqueda, CodigoCliente, FechaInicio, FechaFin, Usuario, Sesion);
         }
         
-        public System.Threading.Tasks.Task<string> ObtenerDetallePagosAsync(int CodigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, System.DateTime FechaInicio, System.DateTime FechaFin, string Usuario, string Sesion) {
+        public System.Threading.Tasks.Task<string> ObtenerDetallePagosAsync(int CodigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, string FechaInicio, string FechaFin, string Usuario, string Sesion) {
             return base.Channel.ObtenerDetallePagosAsync(CodigoConvenio, CodigoTipoBusqueda, CodigoCliente, FechaInicio, FechaFin, Usuario, Sesion);
         }
         
-        public string ObtenerDatosDeFactura(int CodigoConvenio, System.DateTime FechaTransaccion, string NroTransaccion, string Usuario, string Sesion) {
+        public string ObtenerDatosDeFactura(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion) {
             return base.Channel.ObtenerDatosDeFactura(CodigoConvenio, FechaTransaccion, NroTransaccion, Usuario, Sesion);
         }
         
-        public System.Threading.Tasks.Task<string> ObtenerDatosDeFacturaAsync(int CodigoConvenio, System.DateTime FechaTransaccion, string NroTransaccion, string Usuario, string Sesion) {
+        public System.Threading.Tasks.Task<string> ObtenerDatosDeFacturaAsync(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion) {
             return base.Channel.ObtenerDatosDeFacturaAsync(CodigoConvenio, FechaTransaccion, NroTransaccion, Usuario, Sesion);
         }
         
@@ -245,11 +245,11 @@ namespace ConsoleTest.ServicioIntegrador {
             return base.Channel.ObtenerPlandePagosAsync(CodigoConvenio, Gestion, CodigoTipoBusqueda, CodigoCliente, Usuario, Sesion);
         }
         
-        public string ConciliarPagos(int CodigoConvenio, System.DateTime FechaInicio, System.DateTime FechaFin, string UsuarioPago, string Usuario, string Sesion) {
+        public string ConciliarPagos(int CodigoConvenio, string FechaInicio, string FechaFin, string UsuarioPago, string Usuario, string Sesion) {
             return base.Channel.ConciliarPagos(CodigoConvenio, FechaInicio, FechaFin, UsuarioPago, Usuario, Sesion);
         }
         
-        public System.Threading.Tasks.Task<string> ConciliarPagosAsync(int CodigoConvenio, System.DateTime FechaInicio, System.DateTime FechaFin, string UsuarioPago, string Usuario, string Sesion) {
+        public System.Threading.Tasks.Task<string> ConciliarPagosAsync(int CodigoConvenio, string FechaInicio, string FechaFin, string UsuarioPago, string Usuario, string Sesion) {
             return base.Channel.ConciliarPagosAsync(CodigoConvenio, FechaInicio, FechaFin, UsuarioPago, Usuario, Sesion);
         }
     }

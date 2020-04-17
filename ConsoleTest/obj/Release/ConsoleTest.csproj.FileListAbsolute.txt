@@ -23,7 +23,6 @@ C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Release\clsServicio.pd
 C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Release\clsServicio.dll.config
 C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Release\EntityFramework.xml
 C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\bin\Release\EntityFramework.SqlServer.xml
-C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\obj\Release\ConsoleTest.csprojAssemblyReference.cache
 C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\obj\Release\ConsoleTest.csproj.CopyComplete
 C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\obj\Release\ConsoleTest.exe
 C:\Users\VICTOR\Documents\VHPri\Cambridge\ConsoleTest\obj\Release\ConsoleTest.pdb
