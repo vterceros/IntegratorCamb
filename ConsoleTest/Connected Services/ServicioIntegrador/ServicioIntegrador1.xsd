@@ -19,7 +19,7 @@
   <xs:element name="ObtenerConceptoPago">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
@@ -36,7 +36,7 @@
   <xs:element name="ObtenerListaNiveles">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
@@ -53,7 +53,7 @@
   <xs:element name="ObtenerListaSubNiveles">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Sesion" nillable="true" type="xs:string" />
@@ -70,7 +70,7 @@
   <xs:element name="ObtenerListaClientes">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="TipoConsulta" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
@@ -88,7 +88,7 @@
   <xs:element name="ObtenerServiciosRelacionados">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoTipoBusqueda" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:string" />
@@ -107,7 +107,7 @@
   <xs:element name="ObtenerDeuda">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoTipoBusqueda" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:string" />
@@ -126,7 +126,7 @@
   <xs:element name="RegistrarPago">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="FechaTransaccion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoTipoBusqueda" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:string" />
@@ -150,7 +150,7 @@
   <xs:element name="RevertirPago">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="FechaTransaccion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="NroTransaccion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
@@ -168,7 +168,7 @@
   <xs:element name="ExtornarFactura">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="FechaTransaccion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="NroTransaccion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="NumeroFactura" type="xs:int" />
@@ -187,7 +187,7 @@
   <xs:element name="ConsultarTransaccion">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="FechaTransaccion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="NroTransaccion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
@@ -205,7 +205,7 @@
   <xs:element name="ObtenerDetallePagos">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoTipoBusqueda" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="FechaInicio" nillable="true" type="xs:string" />
@@ -225,7 +225,7 @@
   <xs:element name="ObtenerDatosDeFactura">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="FechaTransaccion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="NroTransaccion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
@@ -243,7 +243,7 @@
   <xs:element name="ObtenerPlandePagos">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Gestion" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoTipoBusqueda" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CodigoCliente" nillable="true" type="xs:string" />
@@ -262,7 +262,7 @@
   <xs:element name="ConciliarPagos">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="CodigoConvenio" type="xs:int" />
+        <xs:element minOccurs="0" name="CodigoConvenio" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="FechaInicio" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="FechaFin" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="UsuarioPago" nillable="true" type="xs:string" />

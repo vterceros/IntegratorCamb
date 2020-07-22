@@ -16,45 +16,45 @@ namespace WcfService
         string VerificarConectividad(string Usuario, string UsuarioConexion, string ContraseniaConexion);
 
         [OperationContract]
-        string ObtenerConceptoPago(int CodigoConvenio, string Gestion, string Usuario, string Sesion);
+        string ObtenerConceptoPago(string CodigoConvenio, string Gestion, string Usuario, string Sesion);
 
         [OperationContract]
-        string ObtenerListaNiveles(int CodigoConvenio, string Gestion, string Usuario, string Sesion);
+        string ObtenerListaNiveles(string CodigoConvenio, string Gestion, string Usuario, string Sesion);
 
         [OperationContract]
-        string ObtenerListaSubNiveles(int CodigoConvenio, string Gestion, string Usuario, string Sesion);
+        string ObtenerListaSubNiveles(string CodigoConvenio, string Gestion, string Usuario, string Sesion);
 
         [OperationContract]
-        string ObtenerListaClientes(int CodigoConvenio, string Gestion, string TipoConsulta, string Usuario, string Sesion);
+        string ObtenerListaClientes(string CodigoConvenio, string Gestion, string TipoConsulta, string Usuario, string Sesion);
 
         [OperationContract]
-        string ObtenerServiciosRelacionados(int CodigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string Usuario, string Sesion);
+        string ObtenerServiciosRelacionados(string CodigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string Usuario, string Sesion);
 
         [OperationContract]
-        string ObtenerDeuda(int CodigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string Usuario, string Sesion);
+        string ObtenerDeuda(string CodigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string Usuario, string Sesion);
 
         [OperationContract]
-        string RegistrarPago(int CodigoConvenio, string FechaTransaccion, string CodigoTipoBusqueda, string CodigoCliente, string FacturaNITCI, string FacturaNombre, string NroTransaccion, string Usuario, string Sesion, string DetallePago, string DatosFactura);
+        string RegistrarPago(string CodigoConvenio, string FechaTransaccion, string CodigoTipoBusqueda, string CodigoCliente, string FacturaNITCI, string FacturaNombre, string NroTransaccion, string Usuario, string Sesion, string DetallePago, string DatosFactura);
 
         [OperationContract]
-        string RevertirPago(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion);
+        string RevertirPago(string CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion);
 
         [OperationContract]
-        string ExtornarFactura(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, int NumeroFactura, string Usuario, string Sesion);
+        string ExtornarFactura(string CodigoConvenio, string FechaTransaccion, string NroTransaccion, int NumeroFactura, string Usuario, string Sesion);
 
         [OperationContract]
-        string ConsultarTransaccion(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion);
+        string ConsultarTransaccion(string CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion);
 
         [OperationContract]
-        string ObtenerDetallePagos(int CodigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, string FechaInicio, string FechaFin, string Usuario, string Sesion);
+        string ObtenerDetallePagos(string CodigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, string FechaInicio, string FechaFin, string Usuario, string Sesion);
 
         [OperationContract]
-        string ObtenerDatosDeFactura(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion);
+        string ObtenerDatosDeFactura(string CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion);
 
         [OperationContract]
-        string ObtenerPlandePagos(int CodigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string Usuario, string Sesion);
+        string ObtenerPlandePagos(string CodigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string Usuario, string Sesion);
 
         [OperationContract]
-        string ConciliarPagos(int CodigoConvenio, string FechaInicio, string FechaFin, string UsuarioPago, string Usuario, string Sesion);
+        string ConciliarPagos(string CodigoConvenio, string FechaInicio, string FechaFin, string UsuarioPago, string Usuario, string Sesion);
     }
 }

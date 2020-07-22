@@ -32,3 +32,4 @@ C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\bin\Release\EntityFramewor
 C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\obj\Release\clsServicio.csproj.CopyComplete
 C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\obj\Release\clsServicio.dll
 C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\obj\Release\clsServicio.pdb
+C:\Users\VICTOR\Documents\VHPri\Cambridge\clsServicio\obj\Release\clsServicio.csprojAssemblyReference.cache

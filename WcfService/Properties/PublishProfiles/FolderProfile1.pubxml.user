@@ -10,13 +10,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/clsServicio.dll">
-      <publishTime>03/28/2020 17:51:05</publishTime>
+      <publishTime>07/22/2020 10:32:34</publishTime>
     </File>
     <File Include="bin/clsServicio.dll.config">
       <publishTime>03/02/2020 08:46:41</publishTime>
     </File>
     <File Include="bin/clsServicio.pdb">
-      <publishTime>03/28/2020 17:51:05</publishTime>
+      <publishTime>07/22/2020 10:32:34</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>03/02/2020 08:46:43</publishTime>
@@ -25,19 +25,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/02/2020 08:46:43</publishTime>
     </File>
     <File Include="bin/WcfService.dll">
-      <publishTime>03/28/2020 17:51:07</publishTime>
+      <publishTime>07/22/2020 10:32:35</publishTime>
     </File>
     <File Include="bin/WcfService.pdb">
-      <publishTime>03/28/2020 17:51:07</publishTime>
+      <publishTime>07/22/2020 10:32:35</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>03/28/2020 17:51:08</publishTime>
+      <publishTime>07/22/2020 10:32:35</publishTime>
     </File>
     <File Include="ServicioIntegrador.svc">
       <publishTime>03/02/2020 08:46:40</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/28/2020 17:51:07</publishTime>
+      <publishTime>04/17/2020 14:37:09</publishTime>
     </File>
   </ItemGroup>
 </Project>

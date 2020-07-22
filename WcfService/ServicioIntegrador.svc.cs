@@ -27,7 +27,7 @@ namespace WcfService
             }
         }
 
-        public string ObtenerConceptoPago(int CodigoConvenio, string Gestion, string Usuario, string Sesion)
+        public string ObtenerConceptoPago(string CodigoConvenio, string Gestion, string Usuario, string Sesion)
         {
             try
             {
@@ -39,7 +39,7 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string ObtenerListaNiveles(int CodigoConvenio, string Gestion, string Usuario, string Sesion)
+        public string ObtenerListaNiveles(string CodigoConvenio, string Gestion, string Usuario, string Sesion)
         {
             try
             {
@@ -51,7 +51,7 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string ObtenerListaSubNiveles(int CodigoConvenio, string Gestion, string Usuario, string Sesion)
+        public string ObtenerListaSubNiveles(string CodigoConvenio, string Gestion, string Usuario, string Sesion)
         {
             try
             {
@@ -63,7 +63,7 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string ObtenerListaClientes(int CodigoConvenio, string Gestion, string TipoConsulta, string Usuario, string Sesion)
+        public string ObtenerListaClientes(string CodigoConvenio, string Gestion, string TipoConsulta, string Usuario, string Sesion)
         {
             try
             {
@@ -75,7 +75,7 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string ObtenerServiciosRelacionados(int CodigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string Usuario, string Sesion)
+        public string ObtenerServiciosRelacionados(string CodigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string Usuario, string Sesion)
         {
             try
             {
@@ -87,7 +87,7 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string ObtenerDeuda(int CodigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string Usuario, string Sesion)
+        public string ObtenerDeuda(string CodigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string Usuario, string Sesion)
         {
             try
             {
@@ -99,7 +99,7 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string RegistrarPago(int CodigoConvenio, string FechaTransaccion, string CodigoTipoBusqueda, string CodigoCliente, string FacturaNITCI, string FacturaNombre, string NroTransaccion, string Usuario, string Sesion, string DetallePago, string DatosFactura)
+        public string RegistrarPago(string CodigoConvenio, string FechaTransaccion, string CodigoTipoBusqueda, string CodigoCliente, string FacturaNITCI, string FacturaNombre, string NroTransaccion, string Usuario, string Sesion, string DetallePago, string DatosFactura)
         {
             try
             {
@@ -114,7 +114,7 @@ namespace WcfService
         }
 
 
-        public string RevertirPago(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion)
+        public string RevertirPago(string CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion)
         {
             try
             {
@@ -126,7 +126,7 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string ExtornarFactura(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, int NumeroFactura, string Usuario, string Sesion)
+        public string ExtornarFactura(string CodigoConvenio, string FechaTransaccion, string NroTransaccion, int NumeroFactura, string Usuario, string Sesion)
         {
             try
             {
@@ -138,7 +138,7 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string ConsultarTransaccion(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion)
+        public string ConsultarTransaccion(string CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion)
         {
             try
             {
@@ -150,7 +150,7 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string ObtenerDetallePagos(int CodigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, string FechaInicio, string FechaFin, string Usuario, string Sesion)
+        public string ObtenerDetallePagos(string CodigoConvenio, string CodigoTipoBusqueda, string CodigoCliente, string FechaInicio, string FechaFin, string Usuario, string Sesion)
         {
             try
             {
@@ -162,7 +162,7 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string ObtenerDatosDeFactura(int CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion)
+        public string ObtenerDatosDeFactura(string CodigoConvenio, string FechaTransaccion, string NroTransaccion, string Usuario, string Sesion)
         {
             try
             {
@@ -174,7 +174,7 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string ObtenerPlandePagos(int CodigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string Usuario, string Sesion)
+        public string ObtenerPlandePagos(string CodigoConvenio, string Gestion, string CodigoTipoBusqueda, string CodigoCliente, string Usuario, string Sesion)
         {
             try
             {
@@ -186,7 +186,7 @@ namespace WcfService
                 return ex.Message.ToString();
             }
         }
-        public string ConciliarPagos(int CodigoConvenio, string FechaInicio, string FechaFin, string UsuarioPago, string Usuario, string Sesion)
+        public string ConciliarPagos(string CodigoConvenio, string FechaInicio, string FechaFin, string UsuarioPago, string Usuario, string Sesion)
         {
             try
             {
