@@ -12,6 +12,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "ConsoleTest\
 		{E4C60A52-E27B-4246-868D-240F12D15F4A} = {E4C60A52-E27B-4246-868D-240F12D15F4A}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{EC9E6075-C0FE-4680-984F-C060482C1D2A}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\Ca\Integrador.sql = ..\..\..\Desktop\Ca\Integrador.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
